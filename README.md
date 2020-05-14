@@ -53,3 +53,10 @@ Windows 10 を起動するには下記コマンドを実行します。
 ```
 $ vagrant up windows10
 ```
+
+ログイン ID とパスワードは次のとおりです。
+
+| OS         | ログイン ID | パスワード |
+|------------|-------------|------------|
+| Kali Linux | vagrant     | vagrant    |
+| Windows 10 | IEUser      | Passw0rd!  |
