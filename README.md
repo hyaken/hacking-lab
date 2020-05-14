@@ -10,9 +10,10 @@
 [VirtualBox]: https://www.virtualbox.org/
 [Vagrant]: https://www.vagrantup.com/
 
-## 使い方
+## 準備
 
-Windows 10 の Vagrant box イメージを下記から入手します。
+Kali Linux と Windows 10 の仮想マシンが構築できますが、Windows 10 はサイトからイメージを取り込んでおく必要があります。
+まず Windows 10 の Vagrant box イメージを下記から入手します。
 
 ```
 https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/
@@ -25,16 +26,17 @@ $ unzip MSEdge.Win10.Vagrant.zip
 $ vagrant box add EdgeOnWindows10.box --name windows10
 ```
 
-仮想マシンを起動します。
+## 起動
+
+Kali Linux を起動するには下記コマンドを実行します。
 
 ```
 $ vagrant up
-```
-
-Kali Linux と Windows 10 の仮想マシンが起動します。
-個別に起動したい場合は仮想マシン名を次のように指定してください。
-
-```
+or
 $ vagrant up kali
+```
+
+Windows 10 を起動するには下記コマンドを実行します。
+```
 $ vagrant up windows10
 ```
