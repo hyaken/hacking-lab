@@ -25,8 +25,7 @@ $ vagrant plugin install vagrant-vbguest
 
 ### Windows 10 の box イメージを用意する
 
-Kali Linux と Windows 10 の仮想マシンが構築できますが、Windows 10 はサイトからイメージを取り込んでおく必要があります。
-まず Windows 10 の Vagrant box イメージを下記から入手します。
+Windows 10 の box イメージを下記から入手します。
 
 ```
 https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/
@@ -41,22 +40,18 @@ $ vagrant box add EdgeOnWindows10.box --name windows10
 
 ### 起動
 
-Kali Linux を起動するには下記コマンドを実行します。
+3 つの仮想マシンを起動することができます。
 
 ```
-$ vagrant up
-or
-$ vagrant up kali
-```
-
-Windows 10 を起動するには下記コマンドを実行します。
-```
-$ vagrant up windows10
+$ vagrant up kali               # Kali Linux
+$ vagrant up windows10          # Windows 10
+$ vagrant up metasploitable     # Metasploitable
 ```
 
 ログイン ID とパスワードは次のとおりです。
 
-| OS         | ログイン ID | パスワード |
-|------------|-------------|------------|
-| Kali Linux | vagrant     | vagrant    |
-| Windows 10 | IEUser      | Passw0rd!  |
+| OS             | ログイン ID | パスワード |
+|----------------|-------------|------------|
+| Kali Linux     | vagrant     | vagrant    |
+| Windows 10     | IEUser      | Passw0rd!  |
+| Metasploitable | vagrant     | vagrant    |
